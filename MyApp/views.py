@@ -7,7 +7,9 @@ from .models import Coin
 
 # Define the home view
 def home(request):
-    return render(request, 'home.html')
+    coins = Coin.objects.all()
+    return render(request, 'home.html',
+        {'coins': coins})
 
 
 # Define the about view
