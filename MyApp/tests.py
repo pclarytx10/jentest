@@ -18,5 +18,3 @@ class IndexViewTestCase(TestCase):
         request = HttpRequest()
         response = index(request)
         self.assertEqual(response.status_code, 200)
-
-
