@@ -1,0 +1,5 @@
+MyApp/models.py:1:1: [E] PYFLAKES:'django.db.models' imported but unused
+MyApp/admin.py:1:1: [E] PYFLAKES:'django.contrib.admin' imported but unused
+MyApp/tests.py:2:1: [E] PYFLAKES:'django.urls.reverse' imported but unused
+MyApp/tests.py:11:1: [E] PYFLAKES:redefinition of unused 'IndexViewTestCase' from line 7
+MyApp/views.py:1:1: [E] PYFLAKES:'django.shortcuts.render' imported but unused
