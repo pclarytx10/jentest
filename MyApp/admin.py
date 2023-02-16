@@ -3,5 +3,3 @@ from .models import Coin
 
 # Register your models here.
 admin.site.register(Coin)
-
-
