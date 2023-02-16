@@ -19,3 +19,4 @@ class IndexViewTestCase(TestCase):
         response = index(request)
         self.assertEqual(response.status_code, 200)
 
+
