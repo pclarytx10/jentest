@@ -1,0 +1,5 @@
+MyApp/admin.py:5:1: W391 blank line at end of file
+MyApp/models.py:11:1: W293 blank line contains whitespace
+MyApp/models.py:13:5: E303 too many blank lines (2)
+MyApp/models.py:18:1: W391 blank line at end of file
+MyApp/migrations/0001_initial.py:17:80: E501 line too long (117 > 79 characters)
