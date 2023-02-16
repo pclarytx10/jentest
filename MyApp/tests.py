@@ -1,3 +1,6 @@
+if __name__ == '__MyApp__':
+    unittest.MyApp()
+
 from django.test import TestCase
 from django.urls import reverse
 from django.http import HttpRequest

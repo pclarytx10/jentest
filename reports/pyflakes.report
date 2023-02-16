@@ -1,3 +1,5 @@
-MyApp/tests.py:2:1: [E] PYFLAKES:'django.urls.reverse' imported but unused
-MyApp/tests.py:15:1: [E] PYFLAKES:redefinition of unused 'IndexViewTestCase' from line 9
-MyApp/views.py:1:1: [E] PYFLAKES:'django.shortcuts.render' imported but unused
+MyApp/tests.py:2:5: [E] PYFLAKES:undefined name 'unittest'
+MyApp/tests.py:5:1: [E] PYFLAKES:'django.urls.reverse' imported but unused
+MyApp/tests.py:18:1: [E] PYFLAKES:redefinition of unused 'HomeViewTestCase' from line 12
+MyApp/tests.py:32:1: [E] PYFLAKES:redefinition of unused 'AboutViewTestCase' from line 26
+MyApp/views.py:3:1: [E] PYFLAKES:'.models.Coin' imported but unused
