@@ -1,5 +1,1 @@
-MyApp/tests.py:4:1: E402 module level import not at top of file
-MyApp/tests.py:5:1: E402 module level import not at top of file
-MyApp/tests.py:6:1: E402 module level import not at top of file
-MyApp/tests.py:7:1: E402 module level import not at top of file
 MyApp/migrations/0001_initial.py:17:80: E501 line too long (117 > 79 characters)

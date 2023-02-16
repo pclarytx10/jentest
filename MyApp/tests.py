@@ -2,9 +2,8 @@ from django.test import TestCase
 from django.urls import reverse
 from django.http import HttpRequest
 from .views import home, about
-
-if __name__ == '__MyApp__':
-    unittest.MyApp()
+# if __name__ == '__MyApp__':
+#     unittest.MyApp()
 
 # Create your tests here.
 
