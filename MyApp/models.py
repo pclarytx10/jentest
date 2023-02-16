@@ -7,6 +7,7 @@ class Coin(models.Model):
     coin_name = models.CharField(max_length=50)
     api_id = models.CharField(max_length=250, blank=True)
     coin_symbol = models.CharField(max_length=10, blank=True)
+    coin_usd_price = models.FloatField(blank=True, null=True)
     last_updated = models.DateField(blank=True, null=True)
 
     class Meta:
