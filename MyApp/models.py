@@ -15,3 +15,4 @@ class Coin(models.Model):
     def __str__(self) -> str:
         return self.coin_name
 
+
