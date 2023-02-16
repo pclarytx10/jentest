@@ -1,0 +1,80 @@
+{% load static %} 
+<!DOCTYPE html>
+{% comment %} TODO: Add jquery script and convert nav menu to materialize dropdown menu {% endcomment %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicon-16x16.png' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap" rel="stylesheet">
+    <link rel="manifest" href="{% static 'site.webmanifest' %}">
+    <title>CryptoVision</title>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('select').formSelect();
+      });
+    </script>
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <header class="navbar-fixed">
+      <ul id="dropdown1" class="dropdown-content">
+        {% comment %} <li><a href="/coins">All Coins</a></li> {% endcomment %}
+        {% comment %} <li><a href="{% url 'coins_create' %}">Add Coin</a></li> {% endcomment %}
+        {% comment %} <li><a href="{% url 'search' %}">Search API</a></li> {% endcomment %}
+        {% comment %} <li class="divider"></li> {% endcomment %}
+      </ul>
+      <nav>
+        <div class="nav-wrapper blue darken-3">
+          <ul>
+            <li>
+              <a href="/" class="left brand-logo">&nbsp;&nbsp;CryptoVision</a>
+            </li>
+          </ul>
+
+          <ul class="right">
+            <li><a href="/about">About</a></li>
+            {% comment %} {% if user.is_authenticated %} {% endcomment %}
+            <!-- Dropdown Trigger -->
+            {% comment %} <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Coins</a></li> {% endcomment %}
+            {% comment %} <li><a href="/user_coins">My Coins</a></li> {% endcomment %}
+            {% comment %} <li><a href="{% url 'logout' %}">Log Out</a></li> {% endcomment %}
+            {% comment %} <li><a href="{% url 'test' %}">Query Test</a></li> {% endcomment %}
+          {% comment %} {% else %} {% endcomment %}
+            {% comment %} <li><a href="{% url 'login' %}">Log In</a></li> {% endcomment %}
+            {% comment %} <li><a href="{% url 'signup' %}">Sign Up</a></li> {% endcomment %}
+          {% comment %} {% endif %} {% endcomment %}
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="container">{% block content %} {% endblock %}</main>
+    <footer class="page-footer blue darken-3">
+      <div>
+        All Rights Reserved, &copy; 2023 CryptoVision &nbsp;
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    $(".dropdown-trigger").dropdown({
+      coverTrigger: false,
+      hover: true
+    });
+  </script>
+</html>
