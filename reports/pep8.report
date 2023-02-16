@@ -1,13 +1,9 @@
-MyApp/tests.py:7:1: E302 expected 2 blank lines, found 1
-MyApp/tests.py:8:1: W293 blank line contains whitespace
-MyApp/tests.py:9:1: W293 blank line contains whitespace
-MyApp/tests.py:10:5: E303 too many blank lines (2)
-MyApp/tests.py:13:1: E302 expected 2 blank lines, found 1
-MyApp/tests.py:14:1: W293 blank line contains whitespace
-MyApp/tests.py:15:1: W293 blank line contains whitespace
-MyApp/tests.py:16:5: E303 too many blank lines (2)
-MyApp/tests.py:20:1: W391 blank line at end of file
-MyApp/tests.py:20:1: W293 blank line contains whitespace
+MyApp/tests.py:9:35: W291 trailing whitespace
+MyApp/tests.py:10:1: W293 blank line contains whitespace
+MyApp/tests.py:15:35: W291 trailing whitespace
+MyApp/tests.py:16:1: W293 blank line contains whitespace
+MyApp/tests.py:21:1: W391 blank line at end of file
+MyApp/tests.py:21:1: W293 blank line contains whitespace
 MyApp/views.py:6:1: E302 expected 2 blank lines, found 1
 MyApp/views.py:7:1: W293 blank line contains whitespace
 MyApp/views.py:8:1: W293 blank line contains whitespace
