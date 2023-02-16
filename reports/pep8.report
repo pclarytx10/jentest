@@ -1,7 +1,6 @@
-MyApp/tests.py:8:1: E302 expected 2 blank lines, found 1
-MyApp/tests.py:11:5: E303 too many blank lines (2)
-MyApp/tests.py:18:5: E303 too many blank lines (2)
-MyApp/tests.py:22:1: W391 blank line at end of file
+MyApp/tests.py:12:5: E303 too many blank lines (2)
+MyApp/tests.py:20:5: E303 too many blank lines (2)
+MyApp/tests.py:25:1: W391 blank line at end of file
 MyApp/views.py:6:1: E302 expected 2 blank lines, found 1
 MyApp/views.py:7:1: W293 blank line contains whitespace
 MyApp/views.py:8:1: W293 blank line contains whitespace

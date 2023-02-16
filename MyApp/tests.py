@@ -8,14 +8,12 @@ from .views import index
 
 class IndexViewTestCase(TestCase):
 
-
     def test_index_view_loads(self):
 
         pass
 
 
 class IndexViewTestCase(TestCase):
-
 
     def test_index_view_loads(self):
 
