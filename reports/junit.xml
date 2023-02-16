@@ -1,1 +1,11 @@
-<testsuite name="Django Project Tests" errors="0" failures="0" skips="0" tests="1" time="0.000"><testcase time="0.000154" classname="MyApp.tests.IndexViewTestCase" name="test_index_view_loads" /></testsuite>
+<testsuite name="Django Project Tests" errors="1" failures="0" skips="0" tests="1" time="0.000"><testcase time="0.000026" classname="unittest.loader._FailedTest" name="MyApp.tests"><error type="builtins.ImportError" message="Failed to import test module: MyApp.tests&#10;Traceback (most recent call last):&#10;  File &quot;/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/loader.py&quot;, line 436, in _find_test_path&#10;    module = self._get_module_from_name(name)&#10;  File &quot;/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/loader.py&quot;, line 377, in _get_module_from_name&#10;    __import__(name)&#10;  File &quot;/Users/patrickm/Documents/General Assembly Files/labs/experiments/jentest/DjangoJenkins/MyApp/tests.py&quot;, line 4, in &lt;module&gt;&#10;    from .views import index&#10;ImportError: cannot import name 'index' from 'MyApp.views' (/Users/patrickm/Documents/General Assembly Files/labs/experiments/jentest/DjangoJenkins/MyApp/views.py)&#10;">ImportError: Failed to import test module: MyApp.tests
+Traceback (most recent call last):
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/Users/patrickm/Documents/General Assembly Files/labs/experiments/jentest/DjangoJenkins/MyApp/tests.py", line 4, in &lt;module&gt;
+    from .views import index
+ImportError: cannot import name 'index' from 'MyApp.views' (/Users/patrickm/Documents/General Assembly Files/labs/experiments/jentest/DjangoJenkins/MyApp/views.py)
+
+</error></testcase></testsuite>
