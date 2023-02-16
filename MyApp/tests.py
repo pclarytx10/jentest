@@ -12,11 +12,12 @@ class IndexViewTestCase(TestCase):
         pass
 
 
-class IndexViewTestCase(TestCase):    
+class IndexViewTestCase(TestCase):   
 
     
     def test_index_view_loads(self):
         request = HttpRequest()
         response = index(request)
         self.assertEqual(response.status_code, 200)
+
         
