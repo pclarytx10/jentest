@@ -1,3 +1,4 @@
 MyApp/tests.py:2:1: [E] PYFLAKES:'django.urls.reverse' imported but unused
 MyApp/tests.py:17:1: [E] PYFLAKES:redefinition of unused 'HomeViewTestCase' from line 11
 MyApp/tests.py:31:1: [E] PYFLAKES:redefinition of unused 'AboutViewTestCase' from line 25
+MyApp/views.py:4:1: [E] PYFLAKES:'.tasks.notify_user' imported but unused

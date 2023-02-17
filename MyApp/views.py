@@ -10,7 +10,7 @@ from .tasks import notify_user
 def home(request):
     coins = Coin.objects.all()
     return render(request, 'home.html',
-        {'coins': coins})
+                  {'coins': coins})
 
 
 # Define the about view
