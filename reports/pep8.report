@@ -1,3 +1,2 @@
 MyApp/tasks.py:10:1: W391 blank line at end of file
-MyApp/views.py:13:9: E128 continuation line under-indented for visual indent
 MyApp/migrations/0001_initial.py:17:80: E501 line too long (117 > 79 characters)

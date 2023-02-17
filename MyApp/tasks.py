@@ -7,4 +7,3 @@ def notify_user(user_id):
     print('Notifying user...')
     sleep(10)
     print('User has been notified')
-

@@ -9,8 +9,10 @@ from .tasks import notify_user
 # Define the home view
 def home(request):
     coins = Coin.objects.all()
-    return render(request, 'home.html',
-                  {'coins': coins})
+    return render(
+        request, 'home.html',
+        {'coins': coins}
+    )
 
 
 # Define the about view
