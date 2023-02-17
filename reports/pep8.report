@@ -1,1 +1,4 @@
-MyApp/migrations/0001_initial.py:17:80: E501 line too long (117 > 79 characters)
+MyApp/migrations/0001_initial.py:17:62: W291 trailing whitespace
+MyApp/migrations/0001_initial.py:18:59: W291 trailing whitespace
+MyApp/migrations/0001_initial.py:18:25: E128 continuation line under-indented for visual indent
+MyApp/migrations/0001_initial.py:19:25: E128 continuation line under-indented for visual indent

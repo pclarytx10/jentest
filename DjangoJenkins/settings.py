@@ -143,10 +143,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Celery settings
 CELERY_BROKER_URL = 'redis://localhost:6379/1'
 CELERY_BEAT_SCHEDULE = {
-    'notify_user': {
-        'task': 'MyApp.tasks.notify_user',
-        'schedule': crontab(minute='*/1'),
-        'args': ['Hello World!'],
+    'get_coin_data': {
+        'task': 'MyApp.tasks.get_coin_data',
+        'schedule': crontab(minute='*/3'),
+        # 'args': ['Hello World!'],
     }
 }
 

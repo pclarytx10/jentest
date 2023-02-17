@@ -19,6 +19,7 @@
                 <th>Coin</th>
                 <th>API Name</th>
                 <th>Symbol</th>
+                <th>Price</th>
                 <th>Last Updated</th>
             </tr>
         </thead>
@@ -28,6 +29,7 @@
                 <td>{{ coin.coin_name }}</td>
                 <td>{{ coin.api_id }}</td>
                 <td>{{ coin.coin_symbol }}</td>
+                <td>{{ coin.coin_usd_price }}</td>
                 <td>{{ coin.last_updated }}</td>
             </tr>
             {% endfor %}
