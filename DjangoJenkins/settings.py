@@ -12,7 +12,9 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 import django
 from django.utils.encoding import smart_str
 django.utils.encoding.smart_text = smart_str
+import os
 from pathlib import Path
+from celery.schedules import crontab
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -130,8 +132,21 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# Celery settings
+CELERY_BROKER_URL = 'redis://localhost:6379/1'
+CELERY_BEAT_SCHEDULE = {
+    'notify_user': {
+        'task': 'MyApp.tasks.notify_user',
+        'schedule': crontab(minute='*/1'),
+        'args': ['Hello World!'],
+    }
+}
+
