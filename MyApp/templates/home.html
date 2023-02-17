@@ -30,7 +30,7 @@
                 <td>{{ coin.api_id }}</td>
                 <td>{{ coin.coin_symbol }}</td>
                 <td>{{ coin.coin_usd_price }}</td>
-                <td>{{ coin.last_updated }}</td>
+                <td>{{ coin.last_updated|date:"Y-m-d H:i:s" }}</td>
             </tr>
             {% endfor %}
         </tbody>

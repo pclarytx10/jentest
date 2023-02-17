@@ -35,11 +35,14 @@ def get_coin_data():
             data = response.json()
         except requests.exceptions.RequestException as e:
             return HttpResponse("Error: " + str(e), status=404)
-        print(data.get('id'))
-        # print(data.get('symbol'))
-        # print(data.get('name'))
-        # print(data.get('coin_usd_price'))
-        print(data.get('market_data').get('current_price').get('usd'))
-        print(data.get('last_updated'))
+        
+        # Pull coin object from database
+        db_coin = Coin.objects.get(api_id=coin.api_id)
+        print(db_coin.last_updated.strftime('%Y-%m-%d %H:%M:%S'))
+        # Set coin object attributes and save to database
+        db_coin.coin_usd_price = data['market_data']['current_price']['usd']
+        # db_coin.last_updated = data['last_updated']
+        # print(data['last_updated'])
+        db_coin.save()
         sleep(5)
     print('Coin data has been retrieved')

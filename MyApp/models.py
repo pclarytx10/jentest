@@ -8,7 +8,7 @@ class Coin(models.Model):
     api_id = models.CharField(max_length=250, blank=True)
     coin_symbol = models.CharField(max_length=10, blank=True)
     coin_usd_price = models.FloatField(blank=True, null=True)
-    last_updated = models.DateField(blank=True, null=True)
+    last_updated = models.DateTimeField(auto_now=True, blank=True, null=True)
 
     class Meta:
         ordering = ('coin_name',)
